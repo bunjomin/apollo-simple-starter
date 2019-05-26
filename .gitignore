@@ -1,0 +1,73 @@
+# To remove tracked files and update using this .gitignore,
+# commit any current changes you don't want to lose THEN run these two commands:
+
+# git rm -r --cached .
+# git add .
+
+# Compiled source #
+###################
+**/*.com
+**/*.class
+**/*.dll
+**/*.exe
+**/*.o
+**/*.so
+
+# Packages #
+############
+# it's better to unpack these files and commit the raw source
+# git has its own built in compression methods
+**/*.7z
+**/*.dmg
+**/*.gz
+**/*.iso
+**/*.jar
+**/*.rar
+**/*.tar
+**/*.zip
+
+# Logs and databases #
+######################
+**/*.log
+**/*.sql
+**/*.sqlite
+
+# OS generated files #
+######################
+**/.DS_Store
+**/.DS_Store?
+**/._*
+**/.Spotlight-V100
+**/.Trashes
+**/ehthumbs.db
+**/Thumbs.db
+
+# Other #
+######################
+**/node_modules
+**/settings.json
+
+# ignore composer vendor directory
+**/vendor
+
+# ignore components loaded via Bower
+**/bower_components
+
+# ignore jekyll build directory
+**/_site
+
+# ignore OS generated files
+**/ehthumbs.db
+**/Thumbs.db
+
+# ignore Editor files
+**/*.sublime-project
+**/*.sublime-workspace
+**/*.komodoproject
+
+# -------------------------
+# BEGIN Whitelisted Files
+# -------------------------
+
+# track these files if they exist
+!.gitignore
