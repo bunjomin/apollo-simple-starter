@@ -4,7 +4,9 @@
   "description": "A simple api server with authentication",
   "main": "index.js",
   "scripts": {
-    "server": "nodemon --exec babel-node index.js"
+    "dev": "cross-env NODE_ENV=development nodemon --exec babel-node index.js",
+    "test": "./node_modules/.bin/mocha \"./testing/index.test.js\" --require @babel/register",
+    "test-watch": "cross-env nodemon --exec \"npm test\""
   },
   "keywords": [],
   "author": "",
@@ -27,6 +29,11 @@
     "nodemon": "^1.19.0"
   },
   "devDependencies": {
-    "@babel/node": "^7.2.2"
+    "@babel/node": "^7.2.2",
+    "@babel/polyfill": "^7.4.4",
+    "@babel/register": "^7.4.4",
+    "chai": "^4.2.0",
+    "cross-env": "^5.2.0",
+    "mocha": "^6.1.4"
   }
 }

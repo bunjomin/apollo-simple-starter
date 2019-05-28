@@ -1,3 +1,5 @@
 {
-  "db": "Your MongoDB URL goes here"
+  "db_prod": "mongodb+srv://user:pass@url/prod?retryWrites=true",
+  "db_dev": "mongodb+srv://user:pass@url/dev?retryWrites=true",
+  "db_testing": "mongodb+srv://user:pass@url/test?retryWrites=true",
 }

@@ -1,7 +1,9 @@
 import mongoose from "mongoose";
-import { db } from "./settings.json";
+import settings from "./settings.json";
 import schema from './graphql';
 import { ApolloServer, gql } from "apollo-server";
+
+const db = process.env.NODE_ENV === 'production' ? settings.db_prod : settings.db_dev;
 
 // Connect to MongoDB with Mongoose.
 mongoose

@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-import { hashPass, generateBase64UUID } from "../utils";
+import { generateBase64UUID } from "../utils";
 
 const Schema = mongoose.Schema;
 
