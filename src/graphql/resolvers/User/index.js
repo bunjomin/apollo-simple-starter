@@ -82,7 +82,7 @@ export default {
     }
   },
   Mutation: {
-    authuser: (root, { name, email, password }) => {
+    authUser: (root, { name, email, password }) => {
       return new Promise((resolve, reject) => {
         if (!!password === false) {
           reject(`Password param required to request auth`);

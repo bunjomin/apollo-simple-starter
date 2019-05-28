@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 import settings from "./settings.json";
-import schema from './graphql';
+import schema from './src/graphql';
 import { ApolloServer, gql } from "apollo-server";
 
 const db = process.env.NODE_ENV === 'production' ? settings.db_prod : settings.db_dev;

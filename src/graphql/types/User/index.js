@@ -11,7 +11,7 @@ export default `
     getdata(token: String!): User,
   }
   type Mutation {
-    authuser(name: String, email: String, password: String!): User,
+    authUser(name: String, email: String, password: String!): User,
     createUser(id: Int!, name: String!, email: String!, password: String): User,
     editUser(id: Int, name: String, email: String): User,
     deleteUser(id: Int): User
